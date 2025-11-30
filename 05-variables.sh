@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter your PIN number::"
+echo "Enter your Pin number::"
 
 read PIN
 
