@@ -10,6 +10,7 @@ else
     echo "You are running with root access"
 fi
 
+# validate functions takes input as exit status, what command they tried to install
 VALIDATE(){
      if [ $1 -eq 0 ]
     then
@@ -28,7 +29,7 @@ then
     VALIDATE $? "MYSQL"
 else
     echo "MYSQL is already installed... Nothing to do"
- 
+ fi
  
  dnf list installed python3
 if [ $? -ne 0 ]
