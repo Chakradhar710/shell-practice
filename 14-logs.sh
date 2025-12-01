@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 LOGS_FLODER="/var/log/shellscript-logs"
-SCRIPT_NAME=$ (echo $0 | cut -d "." -f1)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOGS_FLODER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FLODER
